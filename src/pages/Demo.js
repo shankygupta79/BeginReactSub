@@ -29,11 +29,11 @@ class Demo extends Component{
             alert("There is an error in FETCH call.");
         });
         const site={id:1,name:"Its me shubham Only POst Request Testing"};
-        axios.post('api/add', site)
+        /*axios.post('api/add', site)
         .then(() => console.log('Site Created'))
         .catch(err => {
             console.error(err);
-        });
+        });*/
   
 
     }
