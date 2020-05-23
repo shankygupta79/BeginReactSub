@@ -18,7 +18,7 @@ class Demo extends Component{
             console.log(error)
             alert("There is an error in API call.");
         });
-        const fetchPromise = fetch('api/customers')
+        const fetchPromise = fetch('https://learnraact.herokuapp.com/api/customers')
          fetchPromise.then(response => {
             return response.json();
             }).then(arr => {
@@ -29,11 +29,11 @@ class Demo extends Component{
             alert("There is an error in FETCH call.");
         });
         const site={id:1,name:"Its me shubham Only POst Request Testing"};
-        /*axios.post('api/add', site)
+        axios.post('https://learnraact.herokuapp.com/api/add', site)
         .then(() => console.log('Site Created'))
         .catch(err => {
             console.error(err);
-        });*/
+        });
   
 
     }
