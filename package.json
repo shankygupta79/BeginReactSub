@@ -21,13 +21,17 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
+  "engines": {
+    "node": "9",
+    "npm": "5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://learnraact.herokuapp.com/",
   "browserslist": {
     "production": [
       ">0.2%",
