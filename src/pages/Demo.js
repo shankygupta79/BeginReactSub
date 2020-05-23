@@ -15,7 +15,7 @@ class Demo extends Component{
             const perso = res.data;
             this.setState({ persons : perso });
           }).catch((error)=>{
-            //on error
+            console.log(error)
             alert("There is an error in API call.");
         });
         const fetchPromise = fetch('api/customers')
@@ -25,7 +25,7 @@ class Demo extends Component{
             this.setState({ list : arr });
             console.log(this.state.list);
             }).catch((error)=>{
-            //on error
+                console.log(error)
             alert("There is an error in FETCH call.");
         });
         const site={id:1,name:"Its me shubham Only POst Request Testing"};
